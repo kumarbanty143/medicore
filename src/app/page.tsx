@@ -1,14 +1,32 @@
-import { Button } from "@/components/ui/button";
-import { SignUpButton } from "@clerk/nextjs";
-import Image from "next/image";
+import CTA from "@/components/landing/CTA";
+import Footer from "@/components/landing/Footer";
+import Header from "@/components/landing/Header";
+import Hero from "@/components/landing/Hero";
+import HowItWorks from "@/components/landing/HowItWorks";
+import PricingSection from "@/components/landing/PricingSection";
+import WhatToAsk from "@/components/landing/WhatToAsk";
+// import { syncUser } from "@/lib/actions/users";
+import { currentUser } from "@clerk/nextjs/server";
+import { redirect } from "next/navigation";
 
-export default function Home() {
+export default async function Home() {
+  const user = await currentUser();
+
+  // the best way of syncing => webhooks
+  // await syncUser();
+
+  // redirect auth user to dashboard
+  if (user) redirect("/dashboard");
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <Button> Hiii</Button>
-      <h1>
-        <SignUpButton>signup</SignUpButton>
-      </h1>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <Hero />
+      <HowItWorks />
+      <WhatToAsk />
+      <PricingSection />
+      <CTA />
+      <Footer />
     </div>
   );
 }
