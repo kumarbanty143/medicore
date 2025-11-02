@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import { useGetAppointments } from "@/hooks/use-appointment";
 import { useGetDoctors } from "@/hooks/use-doctors";
 import { useUser } from "@clerk/nextjs";
+import { Appointment, Doctor } from "@prisma/client";
 import { SettingsIcon } from "lucide-react";
 
 function AdminDashboardClient() {
@@ -17,9 +18,9 @@ function AdminDashboardClient() {
   // calculate stats from real data
   const stats = {
     totalDoctors: doctors.length,
-    activeDoctors: doctors.filter((doc) => doc.isActive).length,
+    activeDoctors: doctors.filter((doc: Doctor) => doc.isActive).length,
     totalAppointments: appointments.length,
-    completedAppointments: appointments.filter((app) => app.status === "COMPLETED").length,
+    completedAppointments: appointments.filter((app: Appointment) => app.status === "COMPLETED").length,
   };
 
   if (doctorsLoading || appointmentsLoading) return <LoadingUI />;
