@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ClockIcon } from "lucide-react";
 import { Card, CardContent } from "../ui/card";
 
 interface TimeSelectionStepProps {
-  selectedDentistId: string;
+  selectedDoctorId: string;
   selectedDate: string;
   selectedTime: string;
   selectedType: string;

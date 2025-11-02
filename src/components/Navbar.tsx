@@ -16,7 +16,7 @@ function Navbar() {
         {/* LOGO */}
         <div className="flex items-center gap-8">
           <Link href="/dashboard" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="MediCore Logo" width={32} height={32} className="w-11" />
+            <Image src="/logo.png" alt="MediCore Logo" width={40} height={40} className="w-12" />
           </Link>
 
           <div className="flex items-center gap-6">

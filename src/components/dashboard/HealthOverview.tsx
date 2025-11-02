@@ -6,7 +6,7 @@ import { format } from "date-fns";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
-async function DentalHealthOverview() {
+async function HealthOverview() {
   const appointmentStats = await getUserAppointmentStats();
   const user = await currentUser();
 
@@ -15,9 +15,9 @@ async function DentalHealthOverview() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2">
           <BrainIcon className="size-5 text-primary" />
-          Your Dental Health
+          Your Health Overview
         </CardTitle>
-        <CardDescription>Keep track of your dental care journey</CardDescription>
+        <CardDescription>Keep track of your health journey</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="grid md:grid-cols-3 gap-6">
@@ -49,7 +49,7 @@ async function DentalHealthOverview() {
             <div>
               <h4 className="font-semibold text-primary mb-1">Ready to get started?</h4>
               <p className="text-sm text-muted-foreground mb-3">
-                Book your first appointment or try our AI Health Companion for instant dental advice.
+                Book your first appointment or try our AI Health Companion for instant health advice.
               </p>
               <div className="flex gap-2">
                 <Link href="/voice">
@@ -71,4 +71,4 @@ async function DentalHealthOverview() {
   );
 }
 
-export default DentalHealthOverview;
+export default HealthOverview;

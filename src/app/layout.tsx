@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   title: "MediCore - Your AI Health Companion",
   description:
     "Get instant health advice through voice calls with our AI assistant. Avaiable 24/7.",
+  icons: "/logo.png",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

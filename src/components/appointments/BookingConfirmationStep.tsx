@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import DoctorInfo from "./DoctorInfo";
 
 interface BookingConfirmationStepProps {
-  selectedDentistId: string;
+  selectedDoctorId: string;
   selectedDate: string;
   selectedTime: string;
   selectedType: string;
@@ -74,7 +74,7 @@ function BookingConfirmationStep({
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Location</p>
-              <p className="font-medium">Dental Center</p>
+              <p className="font-medium">Medical Center</p>
             </div>
             <div>
               <p className="text-sm text-muted-foreground">Cost</p>

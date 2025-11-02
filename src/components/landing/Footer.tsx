@@ -10,14 +10,14 @@ function Footer() {
               <Image
                 src="/logo.png"
                 alt="MediCore Logo"
-                width={32}
-                height={32}
-                className="w-8 h-8"
+                width={40}
+                height={40}
+                className="w-10 h-10"
               />
-              <span className="font-semibold text-lg">DentWise</span>
+              <span className="font-semibold text-lg">MediCore</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              AI-powered dental assistance that actually helps.
+              AI-powered health assistance that actually helps.
             </p>
           </div>
 
@@ -86,7 +86,7 @@ function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 DentWise. Built for real people with real dental questions.</p>
+          <p>&copy; 2024 MediCore. Built for real people with real health questions.</p>
         </div>
       </div>
     </footer>

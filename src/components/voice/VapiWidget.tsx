@@ -108,10 +108,10 @@ function VapiWidget() {
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold font-mono">
           <span>Talk to Your </span>
-          <span className="text-primary uppercase">AI Dental Assistant</span>
+          <span className="text-primary uppercase">AI Health Companion</span>
         </h1>
         <p className="text-muted-foreground mt-2">
-          Have a voice conversation with our AI assistant for dental advice and guidance
+          Have a voice conversation with our AI assistant for health advice and guidance
         </p>
       </div>
 
@@ -157,7 +157,7 @@ function VapiWidget() {
                 <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-primary/5"></div>
                 <Image
                   src="/logo.png"
-                  alt="AI Dental Assistant"
+                  alt="AI Health Companion"
                   width={80}
                   height={80}
                   className="w-20 h-20 object-contain"
@@ -165,8 +165,8 @@ function VapiWidget() {
               </div>
             </div>
 
-            <h2 className="text-xl font-bold text-foreground">DentWise AI</h2>
-            <p className="text-sm text-muted-foreground mt-1">Dental Assistant</p>
+            <h2 className="text-xl font-bold text-foreground">MediCore AI</h2>
+            <p className="text-sm text-muted-foreground mt-1">Health Companion</p>
 
             {/* SPEAKING INDICATOR */}
             <div
@@ -231,7 +231,7 @@ function VapiWidget() {
             {messages.map((msg, index) => (
               <div key={index} className="message-item animate-in fade-in duration-300">
                 <div className="font-semibold text-xs text-muted-foreground mb-1">
-                  {msg.role === "assistant" ? "DentWise AI" : "You"}:
+                  {msg.role === "assistant" ? "MediCore AI" : "You"}:
                 </div>
                 <p className="text-foreground">{msg.content}</p>
               </div>
@@ -240,7 +240,7 @@ function VapiWidget() {
             {callEnded && (
               <div className="message-item animate-in fade-in duration-300">
                 <div className="font-semibold text-xs text-primary mb-1">System:</div>
-                <p className="text-foreground">Call ended. Thank you for using DentWise AI!</p>
+                <p className="text-foreground">Call ended. Thank you for using MediCore AI!</p>
               </div>
             )}
           </div>

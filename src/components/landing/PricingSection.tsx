@@ -26,12 +26,12 @@ function PricingSection() {
             </span>
             <br />
             <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              AI dental plan
+              AI health plan
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Book appointments for free and upgrade for unlimited AI consultations. Perfect for
-            ongoing dental care.
+            ongoing health care.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ function PricingSection() {
                     <span className="text-4xl font-bold">$0</span>
                     <span className="text-muted-foreground mb-1">/month</span>
                   </div>
-                  <p className="text-muted-foreground">Essential dental appointment booking</p>
+                  <p className="text-muted-foreground">Essential appointment booking</p>
                 </div>
                 <SignUpButton mode="modal">
                   <Button className="w-full py-3 bg-gradient-to-r from-muted to-muted/80 text-foreground rounded-xl font-semibold">
@@ -62,7 +62,7 @@ function PricingSection() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-sm">Find dentists in your area</span>
+                    <span className="text-sm">Find doctors in your area</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -114,7 +114,7 @@ function PricingSection() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-sm">AI dental guidance & advice</span>
+                    <span className="text-sm">AI health guidance & advice</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
@@ -164,7 +164,7 @@ function PricingSection() {
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                    <span className="text-sm">Advanced AI dental analysis</span>
+                    <span className="text-sm">Advanced AI health analysis</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircleIcon className="w-5 h-5 text-primary mt-0.5 shrink-0" />
