@@ -25,14 +25,14 @@ function Hero() {
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary/10 to-primary/5 rounded-full border border-primary/20 backdrop-blur-sm">
                   <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-primary">
-                    AI-Powered Dental Assistant
+                    Your AI-Powered Health Companion
                   </span>
                 </div>
 
                 {/* MAIN HEADING */}
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
                   <span className="bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
-                    Your dental
+                    Your health
                   </span>
                   <br />
                   <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
@@ -46,8 +46,8 @@ function Hero() {
 
                 {/* SUBTITLE */}
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-xl font-medium">
-                  Chat with our AI dental assistant for instant advice, book smart appointments, and
-                  get personalized care recommendations. Available 24/7.
+                  Chat with our AI health assistant for instant advice, book appointments with specialists, and get personalized 
+                  care recommendations. Available 24/7.
                 </p>
               </div>
 
@@ -122,7 +122,7 @@ function Hero() {
                     </div>
                     <p className="text-sm text-muted-foreground">
                       Trusted by{" "}
-                      <span className="font-semibold text-foreground">1,200+ patients</span>
+                      <span className="font-semibold text-foreground">1,000+ users</span>
                     </p>
                   </div>
                 </div>
@@ -138,7 +138,7 @@ function Hero() {
 
               <Image
                 src={"/hero.png"}
-                alt="DentWise AI"
+                alt="MediCore AI"
                 width={600}
                 height={600}
                 className="w-full h-auto"

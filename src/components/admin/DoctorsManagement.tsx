@@ -35,7 +35,7 @@ function DoctorsManagement() {
               <StethoscopeIcon className="size-5 text-primary" />
               Doctors Management
             </CardTitle>
-            <CardDescription>Manage and oversee all doctors in your practice</CardDescription>
+            <CardDescription>Manage and oversee all doctors on your platform</CardDescription>
           </div>
 
           <Button

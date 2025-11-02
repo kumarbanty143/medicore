@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function MainActions() {
   return (
     <div className="grid md:grid-cols-2 gap-8 mb-12">
-      {/* AI Voice Assistant */}
+      {/* AI Health Companion */}
       <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/30">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <CardContent className="relative p-8">
@@ -16,7 +16,7 @@ export default function MainActions() {
               <Image src="/audio.png" alt="Voice AI" width={32} height={32} className="w-10" />
             </div>
             <div>
-              <h3 className="text-2xl font-bold mb-2">AI Voice Assistant</h3>
+              <h3 className="text-2xl font-bold mb-2">AI Health Companion</h3>
               <p className="text-muted-foreground">Get instant dental advice through voice calls</p>
             </div>
           </div>

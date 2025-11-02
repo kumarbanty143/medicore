@@ -17,12 +17,12 @@ function WhatToAsk() {
             </span>
             <br />
             <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              anything dental
+              anything health-related
             </span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             From simple questions to complex concerns, our AI delivers expert-level guidance trained
-            on thousands of real dental cases
+            on a vast medical knowledge base.
           </p>
         </div>
 
@@ -42,13 +42,12 @@ function WhatToAsk() {
                     <div className="space-y-3 flex-1">
                       <div className="bg-primary/5 rounded-2xl p-4 border border-primary/10">
                         <p className="font-semibold text-primary">
-                          "My tooth hurts when I bite down"
+                          "I have a persistent headache, what could it be?"
                         </p>
                       </div>
                       <div className="bg-muted/30 rounded-2xl p-4">
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Get immediate advice on pain management, possible causes, and when to see
-                          a dentist urgently
+                          Understand potential causes for your symptoms and whether you should see a doctor.
                         </p>
                         <div className="flex gap-2 mt-3">
                           <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
@@ -74,13 +73,12 @@ function WhatToAsk() {
                     <div className="space-y-3 flex-1">
                       <div className="bg-primary/5 rounded-2xl p-4 border border-primary/10">
                         <p className="font-semibold text-primary">
-                          "How much does teeth whitening cost?"
+                          "What are the common symptoms of the flu?"
                         </p>
                       </div>
                       <div className="bg-muted/30 rounded-2xl p-4">
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Compare treatment options, pricing ranges, and find the best whitening
-                          solution for your budget
+                          Learn about common signs and symptoms of various conditions.
                         </p>
                         <div className="flex gap-2 mt-3">
                           <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
@@ -106,13 +104,12 @@ function WhatToAsk() {
                     <div className="space-y-3 flex-1">
                       <div className="bg-primary/5 rounded-2xl p-4 border border-primary/10">
                         <p className="font-semibold text-primary">
-                          "When should I replace my filling?"
+                          "What kind of specialist should I see for joint pain?"
                         </p>
                       </div>
                       <div className="bg-muted/30 rounded-2xl p-4">
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                          Learn about filling lifespan, warning signs of wear, and replacement
-                          timing guidance
+                          Get guidance on which type of medical specialist is right for your needs.
                         </p>
                         <div className="flex gap-2 mt-3">
                           <span className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">

@@ -22,14 +22,14 @@ function DoctorSelectionStep({
   if (isLoading)
     return (
       <div className="space-y-6">
-        <h2 className="text-2xl font-semibold">Choose Your Dentist</h2>
+        <h2 className="text-2xl font-semibold">Choose Your Practitioner</h2>
         <DoctorCardsLoading />
       </div>
     );
 
   return (
     <div className="space-y-6">
-      <h2 className="text-2xl font-semibold">Choose Your Dentist</h2>
+      <h2 className="text-2xl font-semibold">Choose Your Practitioner</h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {dentists.map((dentist) => (
@@ -77,7 +77,7 @@ function DoctorSelectionStep({
                 <span>{dentist.phone}</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                {dentist.bio || "Experienced dental professional providing quality care."}
+                {dentist.bio || "Experienced medical professional providing quality care.."}
               </p>
               <Badge variant="secondary">Licensed Professional</Badge>
             </CardContent>

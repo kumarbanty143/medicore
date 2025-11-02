@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DentWise - AI Powered Dental Assistant",
+  title: "MediCore - Your AI Health Companion",
   description:
-    "Get instant dental advice through voice calls with our AI assistant. Avaiable 24/7.",
+    "Get instant health advice through voice calls with our AI assistant. Avaiable 24/7.",
 };
 
 export default function RootLayout({
@@ -43,7 +43,7 @@ export default function RootLayout({
         <html lang="en">
           <body className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}>
             {/* this is done in the home page component */}
-            {/* <UserSync /> */}
+            <UserSync />
             <Toaster />
             {children}
           </body>
