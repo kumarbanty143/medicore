@@ -111,7 +111,7 @@ function HowItWorks() {
 
               <h3 className="text-2xl font-bold mb-4 text-center">Book & Get Care</h3>
               <p className="text-muted-foreground text-center leading-relaxed mb-6">
-                Schedule with verified practitioners and receive comprehensive follow-up care. Track your progress seamlessly.
+                Schedule with verified doctors and receive comprehensive follow-up care. Track your progress seamlessly.
               </p>
 
               {/* Feature Pills */}

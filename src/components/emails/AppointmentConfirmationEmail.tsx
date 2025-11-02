@@ -1,15 +1,4 @@
-import {
-  Body,
-  Container,
-  Head,
-  Heading,
-  Html,
-  Img,
-  Link,
-  Preview,
-  Section,
-  Text,
-} from "@react-email/components";
+import { Body, Container, Head, Heading, Html, Img, Link, Preview, Section, Text, } from "@react-email/components";
 
 interface AppointmentConfirmationEmailProps {
   doctorName: string;
@@ -31,26 +20,26 @@ function AppointmentConfirmationEmail({
   return (
     <Html>
       <Head />
-      <Preview>Your dental appointment has been confirmed</Preview>
+      <Preview>Your medical appointment has been confirmed</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={logoContainer}>
             <Img
               src="https://i.ibb.co.com/tRy6cC2/logo.png"
-              width="50"
-              height="50"
-              alt="DentWise"
+              width="60"
+              height="60"
+              alt="MediCore"
               style={logo}
             />
-            <Text style={logoText}>DentWise</Text>
+            <Text style={logoText}>MediCore</Text>
           </Section>
 
-          <Heading style={h1}>Appointment Confirmed! 🦷</Heading>
+          <Heading style={h1}>Appointment Confirmed! 🩺</Heading>
 
           <Text style={text}>Hi there,</Text>
 
           <Text style={text}>
-            Your dental appointment has been successfully booked. Here are the details:
+            Your medical appointment has been successfully booked. Here are the details:
           </Text>
 
           <Section style={appointmentDetails}>
@@ -73,7 +62,7 @@ function AppointmentConfirmationEmail({
             <Text style={detailValue}>{price}</Text>
 
             <Text style={detailLabel}>Location</Text>
-            <Text style={detailValue}>Dental Center</Text>
+            <Text style={detailValue}>Medical Center</Text>
           </Section>
 
           <Text style={text}>
@@ -90,11 +79,11 @@ function AppointmentConfirmationEmail({
           <Text style={footer}>
             Best regards,
             <br />
-            The DentWise Team
+            The MediCore Team
           </Text>
 
           <Text style={footerText}>
-            If you have any questions, please contact us at support@dentwise.com
+            If you have any questions, please contact us at support@medicore.com
           </Text>
         </Container>
       </Body>
