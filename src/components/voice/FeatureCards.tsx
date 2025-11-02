@@ -1,73 +1,44 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { MicIcon, ShieldIcon, CalendarIcon } from "lucide-react";
+import { Card, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import { BrainCircuitIcon, CalendarCheck2Icon, ShieldCheckIcon } from "lucide-react";
 
 function FeatureCards() {
   return (
-    <div className="grid md:grid-cols-2 gap-8 mb-12">
-      {/* how to use card */}
-      <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/30">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <CardHeader className="relative">
-          <CardTitle className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <MicIcon className="h-5 w-5 text-primary" />
-            </div>
-            How to Use
-          </CardTitle>
-          <CardDescription>Simple steps to get started with voice assistance</CardDescription>
+    <div className="grid md:grid-cols-3 gap-6 mb-12">
+      {/* Card 1: AI-Powered Insights */}
+      <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+        <CardHeader>
+          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mb-4">
+            <BrainCircuitIcon className="w-6 h-6 text-primary" />
+          </div>
+          <CardTitle>AI-Powered Insights</CardTitle>
+          <CardDescription>
+            <span className="text-sm">Ask questions about health and treatments</span>
+          </CardDescription>
         </CardHeader>
-        <CardContent className="relative space-y-4">
-          <div className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-            <span className="text-sm">Click the microphone button to start talking</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-            <span className="text-sm">Ask questions about dental health and treatments</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-            <span className="text-sm">Get instant voice responses from the AI</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-            <span className="text-sm">View conversation transcript in real-time</span>
-          </div>
-        </CardContent>
       </Card>
 
-      {/* features card */}
-      <Card className="relative overflow-hidden group hover:shadow-xl transition-all duration-300 border-2 hover:border-primary/30">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-        <CardHeader className="relative">
-          <CardTitle className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center">
-              <ShieldIcon className="h-5 w-5 text-primary" />
-            </div>
-            Features
-          </CardTitle>
-          <CardDescription>Advanced capabilities for dental care</CardDescription>
+      {/* Card 2: Verified Professionals */}
+      <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+        <CardHeader>
+          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mb-4">
+            <ShieldCheckIcon className="w-6 h-6 text-primary" />
+          </div>
+          <CardTitle>Verified Professionals</CardTitle>
+          <CardDescription>
+            <span className="text-sm">Connect with trusted doctors for expert advice</span>
+          </CardDescription>
         </CardHeader>
-        <CardContent className="relative space-y-4">
-          <div className="flex items-center p-3 bg-muted/30 rounded-xl">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mr-3">
-              <MicIcon className="h-4 w-4 text-primary" />
-            </div>
-            <span className="font-medium text-sm">Real-time Voice Recognition</span>
+      </Card>
+
+      {/* Card 3: Smart Appointments */}
+      <Card className="bg-card/80 backdrop-blur-sm border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-lg">
+        <CardHeader>
+          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center mb-4">
+            <CalendarCheck2Icon className="w-6 h-6 text-primary" />
           </div>
-          <div className="flex items-center p-3 bg-muted/30 rounded-xl">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mr-3">
-              <ShieldIcon className="h-4 w-4 text-primary" />
-            </div>
-            <span className="font-medium text-sm">AI-Powered Responses</span>
-          </div>
-          <div className="flex items-center p-3 bg-muted/30 rounded-xl">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary/20 to-primary/10 rounded-lg flex items-center justify-center mr-3">
-              <CalendarIcon className="h-4 w-4 text-primary" />
-            </div>
-            <span className="font-medium text-sm">Conversation History</span>
-          </div>
-        </CardContent>
+          <CardTitle>Smart Appointments</CardTitle>
+          <CardDescription>Advanced capabilities for health care</CardDescription>
+        </CardHeader>
       </Card>
     </div>
   );

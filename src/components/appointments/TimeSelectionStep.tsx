@@ -23,11 +23,11 @@ function TimeSelectionStep({
   onTimeChange,
   onTypeChange,
   selectedDate,
-  selectedDentistId,
+  selectedDoctorId,
   selectedTime,
   selectedType,
 }: TimeSelectionStepProps) {
-  const { data: bookedTimeSlots = [] } = useBookedTimeSlots(selectedDentistId, selectedDate);
+  const { data: bookedTimeSlots = [] } = useBookedTimeSlots(selectedDoctorId, selectedDate);
 
   const availableDates = getNext5Days();
   const availableTimeSlots = getAvailableTimeSlots();
