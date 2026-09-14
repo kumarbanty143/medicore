@@ -4,6 +4,10 @@
 
 MediCore is a full-stack web application that allows users to get instant health advice from an AI-powered voice assistant and book appointments with doctors. It features a user-friendly interface, a secure authentication system, and an admin dashboard for managing practitioners.
 
+**Live demo:** [medicore-yh5w.vercel.app](https://medicore-yh5w.vercel.app/)
+
+> MediCore is a portfolio project. Its AI-generated guidance is informational and does not replace professional medical advice, diagnosis, treatment, or emergency care.
+
 ---
 
 ## ✨ Features
@@ -39,7 +43,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/medicore.git
+git clone https://github.com/kumarbanty143/medicore.git
 cd medicore
 ```
 
